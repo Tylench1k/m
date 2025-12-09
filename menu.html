@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Меню</title>
+    <style>
+        /* Тёмный стиль, похожий на VS Code */
+        body { 
+            font-family: Consolas, monospace; 
+            background-color: #1e1e1e; /* Темный фон */
+            color: #d4d4d4; /* Светлый текст */
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            height: 100vh; 
+            padding: 10px;
+        }
+        h3 { color: #569cd6; /* Синий акцент */ margin-top: 0; }
+        ul { list-style-type: none; padding: 0; margin-bottom: 20px; }
+        li { margin-bottom: 10px; }
+        a { text-decoration: none; color: #9cdcfe; /* Светло-голубой для ссылок */ font-weight: bold; }
+        a:hover { color: #ffffff; }
+
+        /* Стили для вертикальной бегущей строки */
+        .vertical-marquee {
+            writing-mode: vertical-rl; 
+            text-orientation: mixed;
+            white-space: nowrap;
+            overflow: hidden;
+            color: #ff007f; 
+            font-size: 16em;
+            font-weight: 900;
+            text-shadow: 0 0 5px rgba(255, 0, 127, 0.7);
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Меню</h3>
+    <ul>
+        <li><a href="welcome.html" target="content" title="Самое теплое приветствие!"> Мы в Архызе</a></li>
+        <li><a href="memories.html" target="content" title="Посмотри наши лучшие моменты!"> Топ моментс </a></li>
+        <li><a href="reasons.html" target="content" title="10 причин, почему я тебя люблю!"> Всего лишь 10 причин</a></li>
+        <li><a href="mailto:youremail@example.com" target="_top"> почта </a></li>
+    </ul>
+
+    <div style="flex-grow: 1;"></div> 
+    <marquee direction="up" behavior="scroll" scrollamount="3" class="vertical-marquee">
+        Я тебя люблю котик❤️ Я тебя люблю котик❤️ Я тебя люблю котик❤️ 
+    </marquee>
+</body>
+</html>
